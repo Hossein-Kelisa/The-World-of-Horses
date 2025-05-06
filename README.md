@@ -1,16 +1,14 @@
 # 🐴 Horse Breeds App
 
-This is a React + Vite app that shows different horse breeds.
-You can see breed details,
-like/unlike them,
-and view your favourites.
-All data comes from the Wikipedia API.
+A responsive React + Vite web app that displays information about different horse breeds.  
+Users can view breed details, like/unlike breeds, and manage their list of favourites.  
+All breed data is fetched from the Wikipedia API.
 
 ---
 
 ## 🌐 Live Demo
 
-👉 [Click here to view the Horse Breeds App online](https://Hossein-kelisa.github.io/The-World-of-Horses /)
+👉 [Click here to view the Horse Breeds App online](https://Hossein-kelisa.github.io/The-World-of-Horses/)
 
 
 ---
@@ -40,20 +38,17 @@ This app uses:
 
 🚀 Getting Started
 
-1. Clone the repository:
+Follow these steps to run the app locally:
 
+```bash
+# 1. Clone the repository
 git clone https://github.com/Hossein-Kelisa/The-World-of-Horses.git
-
 cd The-World-of-Horses
 
-
-2. Install the dependencies:
-
+# 2. Install dependencies
 npm install
 
-
-3. Run the app:
-
+# 3. Start the development server
 npm run dev
 
 ---
