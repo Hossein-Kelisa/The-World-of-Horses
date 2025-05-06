@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { useBreeds } from '../context/BreedContext';
+import useBreeds from '../hooks/useBreeds';
 
 function BreedDetails() {
   const { id } = useParams();

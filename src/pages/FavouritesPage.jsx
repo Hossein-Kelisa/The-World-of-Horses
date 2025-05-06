@@ -1,5 +1,5 @@
-import { useBreeds } from '../context/BreedContext';
-import { useFavourites } from '../context/FavouritesContext';
+import useBreeds from '../hooks/useBreeds';
+import useFavourites from '../hooks/useFavourites';
 import BreedCard from '../components/BreedCard';
 
 function FavouritesPage() {

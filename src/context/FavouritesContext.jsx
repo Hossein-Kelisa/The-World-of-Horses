@@ -1,5 +1,5 @@
 
-import { createContext, useContext } from 'react';
+import { createContext} from 'react';
 import useLocalStorage from '../hooks/useLocalStorage';
 
 const FavouritesContext = createContext();
@@ -22,7 +22,4 @@ export function FavouritesProvider({ children }) {
   );
 }
 
-export function useFavourites() {
-    
-  return useContext(FavouritesContext);
-}
+export{ FavouritesContext };

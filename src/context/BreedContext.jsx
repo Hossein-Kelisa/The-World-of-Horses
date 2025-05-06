@@ -1,4 +1,4 @@
-import { createContext, useContext } from 'react';
+import { createContext} from 'react';
 import useLocalStorage from '../hooks/useLocalStorage';
 
 
@@ -12,7 +12,5 @@ export function BreedProvider({ children }) {
     </BreedContext.Provider>
   );
 }
+export { BreedContext };
 
-export function useBreeds() {
-  return useContext(BreedContext);
-}

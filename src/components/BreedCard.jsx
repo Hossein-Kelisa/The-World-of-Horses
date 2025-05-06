@@ -1,15 +1,19 @@
 import { Link } from 'react-router-dom';
-import { useFavourites } from '../context/FavouritesContext';
+import useFavourites from '../hooks/useFavourites';
 
 function BreedCard({ breed }) {  
   const { favourites, toggleFavourite } = useFavourites();
   const isFavourite = favourites.includes(breed.id);  
 
+  const description = breed.description ? breed.description.slice(0, 100) : "No description available";
+
+  const imageSrc = breed.image ? breed.image : '/path/to/fallback-image.jpg';  // replace with your fallback image path
+
   return (
     <div className="breed-card">      
-      <img src={breed.image} alt={breed.name} width="200"/>  
+      <img src={imageSrc} alt={breed.name} width="200"/>  
       <h3>{breed.name}</h3>    
-      <p>{breed.description.slice(0, 100)}...</p> 
+      <p>{description}...</p>  
       <div className="breed-actions"> 
         <Link to={`/breed/${encodeURIComponent(breed.id)}`}>Read More</Link>  
         <button  
