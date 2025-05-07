@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom';
 import useFavourites from '../hooks/useFavourites';
 
+// This component displays a card for each horse breed.
 function BreedCard({ breed }) {  
   const { favourites, toggleFavourite } = useFavourites();
   const isFavourite = favourites.includes(breed.id);  
 
   const description = breed.description ? breed.description.slice(0, 100) : "No description available";
 
-  const imageSrc = breed.image ? breed.image : '/path/to/fallback-image.jpg';  // replace with your fallback image path
+  const imageSrc = breed.image ? breed.image : '/path/to/fallback-image.jpg';  
 
   return (
     <div className="breed-card">      

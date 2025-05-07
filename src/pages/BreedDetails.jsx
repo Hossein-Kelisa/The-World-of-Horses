@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import useBreeds from '../hooks/useBreeds';
 
+// This component displays the details of a specific horse breed.
 function BreedDetails() {
   const { id } = useParams();
   const { breeds } = useBreeds();

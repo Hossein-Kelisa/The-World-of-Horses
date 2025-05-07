@@ -1,6 +1,7 @@
 import BreedCard from '../components/BreedCard';
 import useBreedLoader from '../hooks/useBreedLoader';
 
+// This component displays all horse breeds and allows searching through them.
 function HomePage({ breeds, searchQuery }) {
   const { error} = useBreedLoader();
   

@@ -1,7 +1,7 @@
 import { createContext} from 'react';
 import useLocalStorage from '../hooks/useLocalStorage';
 
-
+// This context is used to manage the horse breeds data across the application.
 const BreedContext = createContext();
 
 export function BreedProvider({ children }) {

@@ -3,6 +3,7 @@ import breedNames from '../services/breedList';
 import { fetchBreedInfo } from '../services/fetchBreedData';
 import useBreeds from './useBreeds';
 
+// This hook loads breed data from an API and sets it in the context.
 export default function useBreedLoader() {
   const { breeds, setBreeds } = useBreeds();
   const[error, setError] = useState(null);
